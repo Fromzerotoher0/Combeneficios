@@ -15,10 +15,13 @@
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  background-image:linear-gradient(rgba(126,213,111,0.8),rgba(40,180,131,0.8)), url('../images/family-background.png');
+  background-image: linear-gradient(
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 131, 0.8)
+    ),
+    url("../images/family-background.png");
   background-size: cover;
-  background-position:bottom;
-  /*background-color: rgba(68, 210, 100, 255);*/
+  background-position: bottom;
 }
 
 .welcome_text {
@@ -72,7 +75,7 @@ a {
 }
 
 /* media query */
-@media screen and (min-width: 0px)  {
+@media screen and (min-width: 0px) {
   .register {
     margin-top: 13vh;
   }
@@ -90,7 +93,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) {
   .login_container {
     margin: 0;
     margin-top: 5%;
@@ -107,7 +110,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width:1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .login_container {
     margin: 0;
     margin-top: 5%;
@@ -128,8 +131,8 @@ a {
   .register {
     margin-top: 15vh;
   }
-  .btn{
-      margin-top: 10%;
+  .btn {
+    margin-top: 10%;
   }
 }
 
@@ -142,17 +145,14 @@ a {
     margin: 0;
   }
   .login_input {
-      width: 60%;
+    width: 60%;
     margin: 3% 0 3% 0;
   }
-  .btn{
-      margin: 5% 0 5% 0;
+  .btn {
+    margin: 5% 0 5% 0;
   }
 
-  .terms{
-      margin: 0;
+  .terms {
+    margin: 0;
   }
-
 }
-
-
