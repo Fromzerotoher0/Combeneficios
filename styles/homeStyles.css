@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  text-decoration:none;
+}
+.options_container{
+  height: 100vw;
+  width: 100vh;
+  background-color: red;
+}
+
+/* google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+
+
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .navBar {
+    background-color: green;
+  }
+
+  .logo {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    margin-left: -10px;
+  }
+
+  .select_ciudad {
+    width: 80%;
+    height: 60%;
+    margin-left: -4%;
+    outline: none;
+    color: white;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+  }
+  option:not(:first-of-type) {
+    color: black;
+  }
+
+  .material-icons{
+    color: white;
+  }
+
+  header{
+    width: 100%;
+  }
+  nav{
+    height:100px;
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    
+  }
+
+  .bar-btn{
+    font-size:25px;
+    margin-right:20px;
+    cursor:Pointer;
+  }
+
+.bell{
+margin-left: 110px;
+color: white;
+font-size: 30px !important;
+}
+
+.settings{
+  font-size: 60px !important;
+  
+}
+
+  .nav-menu{
+    position:fixed;
+    width:100%;
+    height:0;
+    top:100px;
+    background-image: linear-gradient(
+      rgba(255, 255,255, 0.6),
+      rgba(255, 255,255, 0.8)
+    ),
+    url("../images/family-background.png");
+    background-size: cover;
+  background-position: bottom;
+    text-align:center;
+    transition:all .5%;
+  }
+  .nav-menu li{
+    display: none;
+    color: black;
+    width: 100%;
+    border-bottom: 2px solid green;
+    margin:5% 5% 5% 0;
+    line-height: 30px;
+    padding-bottom: 2%;
+    text-align: start;
+    transition:all .5s;
+  }
+
+  .nav-menu li a {
+    color:green;
+    text-transform:uppercase;
+    font-weight:600;
+  }
+
+  .nav-menu li a.active, .nav-menu li a:hover{
+    color:rgb(248,8,8);
+    transition: .5s;
+  }
+
+  #check{
+    display:none;
+  }
+  #check:checked ~ .nav-menu {
+    height:100vh;
+  }
+  #check:checked ~ .nav-menu li{
+    display:block;
+  }
+}
+@media (min-width: 420px) {
+  .container{
+    width: 80vw;
+  }
+
+.bell{
+  font-size: 40px !important;
+}
+.settings{
+  font-size: 40px !important;
+  margin-left: 10px;
+}
+
+.select_ciudad{
+  width: 110px;
+}
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  .container{
+    width: 80vw;
+    margin-right: 50%;
+  }
+  .select_ciudad{
+    width: 70%;
+  }
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}

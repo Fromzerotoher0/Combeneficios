@@ -66,18 +66,18 @@
   border: solid 1px transparent;
   background-color: rgba(255, 255, 255, 255);
 }
-.register {
-  margin-top: 15vh;
-}
-
 a {
   color: white;
+}
+
+.forgot_pass > a {
+  text-decoration: none;
 }
 
 /* media query */
 @media screen and (min-width: 0px) {
   .register {
-    margin-top: 13vh;
+    margin-top: 10vh;
   }
 }
 
@@ -90,6 +90,21 @@ a {
   }
   .register {
     margin-top: 15vh;
+  }
+}
+
+@media screen and (min-width: 545px) {
+  .welcome_text {
+    margin: 5% 0 5% 0;
+  }
+  .login_input {
+    margin: 3% 0 2% 0;
+  }
+  .register {
+    margin-top: 10vh;
+  }
+  .btn {
+    margin: 5% 0 5% 0;
   }
 }
 
