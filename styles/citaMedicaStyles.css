@@ -1,0 +1,274 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/* google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,100;1,300;1,700&display=swap");
+
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+
+  /* contenedor principal */
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  /* barra de navegacion principal */
+  header {
+    width: 100%;
+  }
+  .navBar {
+    background-color: green;
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav_container {
+    width: 100%;
+  }
+
+  /* logo de ubicacion */
+  .logo {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    margin-left: -10px;
+  }
+
+  /* selector de ciudades */
+  .select_ciudad {
+    width: 38%;
+    margin-left: -4%;
+    margin-right: 18%;
+    outline: none;
+    color: white;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+  }
+  option:not(:first-of-type) {
+    color: black;
+  }
+
+  /* logo de notificaciones */
+  .bell {
+    vertical-align: middle;
+    color: white;
+    font-size: 40px !important;
+  }
+  /* logo de opciones */
+  .settings {
+    margin-top: 5px;
+    font-size: 40px !important;
+    vertical-align: middle;
+  }
+
+  /* color de los iconos */
+  .material-icons {
+    color: white;
+  }
+
+  /* menu de opciones */
+  .bar-btn {
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: Pointer;
+  }
+  /* contenedor del menu */
+  .nav-menu {
+    position: fixed;
+    width: 100%;
+    top: 100px;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url("../images/family-background.png");
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    transition: all 0.5%;
+  }
+  /* estilos de los elementos del menu */
+  .nav-menu li {
+    display: none;
+    color: black;
+    width: 100%;
+    border-bottom: 2px solid green;
+    margin: 5% 5% 5% 0;
+    line-height: 30px;
+    padding-bottom: 2%;
+    text-align: start;
+    transition: all 0.5s;
+  }
+  /* estilos de los links del menu */
+  .nav-menu li a {
+    color: green;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .nav-menu li a.active,
+  .nav-menu li a:hover {
+    color: rgb(248, 8, 8);
+    transition: 0.5s;
+  }
+
+  #check {
+    display: none;
+  }
+  #check:checked ~ .nav-menu {
+    height: 100vh;
+    margin-top: -20px;
+  }
+  #check:checked ~ .nav-menu li {
+    display: block;
+  }
+
+  /* menu central */
+  .middle-menu {
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url("../images/family-background.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column;
+  }
+  .menu_title {
+    font-size: 25px;
+    color: rgba(41, 87, 49, 255);
+  }
+
+  .menu_content {
+    font-size: 15px;
+    color: rgb(100, 121, 105);
+  }
+}
+@media (min-width: 374px) {
+  .select_ciudad {
+    width: 30%;
+    margin-right: 33%;
+  }
+
+  .grid-layout {
+    grid-template-columns: 165px 165px;
+    grid-template-rows: 150px 150px;
+    margin-right: -10px;
+    margin-top: -85px;
+  }
+}
+@media (min-width: 399px) {
+  .nav_container {
+    width: 100%;
+  }
+
+  .bell {
+    font-size: 40px !important;
+  }
+  .settings {
+    font-size: 40px !important;
+    margin-left: 10px;
+  }
+  .select_ciudad {
+    width: 35%;
+    margin-right: 38%;
+  }
+
+  .menu_logo {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+  }
+
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width: 424px) {
+  .select_ciudad {
+    width: 33%;
+    margin-right: 31%;
+    margin-left: -2%;
+  }
+}
+
+@media (min-width: 550px) {
+  .select_ciudad {
+    width: 30%;
+    margin-right: 50%;
+    margin-left: -2%;
+  }
+  .grid-layout {
+    grid-template-columns: 165px 165px 165px;
+    grid-template-rows: 150px 150px 150px;
+  }
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  .logo {
+    margin-right: 1%;
+  }
+  .select_ciudad {
+    width: 20%;
+    margin-right: 64%;
+  }
+  .bottom-menu {
+    display: none;
+  }
+  .middle-menu {
+    height: 100vh;
+  }
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  .logo {
+    margin-right: 1%;
+  }
+  .select_ciudad {
+    width: 25%;
+    margin-right: 60%;
+  }
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1250px) {
+  .select_ciudad {
+    width: 15%;
+    margin-right: 73%;
+  }
+  /* hi-res laptops and desktops */
+}
+
+.btn-especialista {
+  width: 70%;
+  height: 40px;
+  border-radius: 20px;
+  align-self: center;
+  color: white;
+  border: transparent;
+  margin-top: 20%;
+  background-color: rgba(68, 209, 100, 255);
+  font-size: 17px;
+}
+
+.menu_content__2 {
+  color: rgb(100, 121, 105);
+}
