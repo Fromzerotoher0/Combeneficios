@@ -1,15 +1,12 @@
-@font-face {
-  font-family: "Cocogoose";
-  src: url(../fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
-}
-*,
-*::after,
-*::before {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-decoration: none;
+}
+/* google fonts*/
+@font-face {
   font-family: "Cocogoose";
+  src: url(../fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
 }
 
 @media (min-width: 320px) {
@@ -35,7 +32,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    overflow: hidden;
   }
 
   .nav_container {
@@ -54,10 +50,10 @@
   .select_ciudad {
     width: 38%;
     margin-left: -4%;
-    margin-right: 15%;
+    margin-right: 18%;
     outline: none;
     color: white;
-    border: 1px solid transparent;
+    border: hidden;
     background-color: transparent;
     border-bottom: 1px solid white;
   }
@@ -144,105 +140,115 @@
   .middle-menu {
     padding: 20px;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.6),
-        rgba(255, 255, 255, 0.8)
+        rgba(255, 255, 255, 0.5)
       ),
-      url("../images/background-2.PNG");
+      url("../images/background-2.png");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     display: flex;
     flex-flow: column;
-    gap: 10%;
   }
-
   .menu_title {
-    font-size: 20px;
-    color: green;
+    font-family: "Cocogoose";
+    font-size: 25px;
+    color: rgba(41, 87, 49, 255);
   }
 
   .menu_content {
     font-size: 15px;
-    color: green;
-    margin-bottom: 10%;
+    color: rgb(100, 121, 105);
   }
 
-  /* menu de el fondo */
-  .bottom-menu {
-    background-color: rgba(255, 255, 255, 0.6);
-    width: 100vw;
-    height: 6vh;
+  .service {
+    height: 20%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 5%;
+    font-family: "Cocogoose";
   }
-  .menu-btn_1 {
-    background-color: white;
-    width: 20%;
-  }
-  .menu-btn_1 img {
-    margin-top: -2px;
-    border-radius: 0;
-  }
-  .menu-btn_2 {
-    background-color: white;
-    width: 20%;
-    border-radius: 0;
-  }
-  .menu-btn_2 img {
-    margin-top: -1px;
-    border-radius: 0;
-  }
-  .menu-btn_3 {
-    background-color: white;
-    width: 20%;
-  }
-  .menu-btn_3 img {
-    margin-top: 1px;
-    border-radius: 0;
-  }
-
-  .menu-btn_4 {
-    background-color: white;
-    width: 20%;
-  }
-  .menu-btn_4 img {
-    border-radius: 0;
-  }
-  .menu-btn {
+  .service_logo {
+    background-color: rgba(5, 79, 154, 255);
+    border-radius: 25px;
+    height: 100px;
+    width: 80px;
     text-align: center;
   }
-
-  .menu_logo {
-    vertical-align: middle;
-    width: 50px;
-    height: 50px;
-    margin-left: -10px;
+  .service_logo img {
+    height: 70px;
+    width: 74px;
+    margin-top: 12px;
   }
 
-  .grid-layout {
+  .service_title {
+    font-size: 15px;
+    margin-top: -10px;
+    color: green;
+  }
+
+  .filter {
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 20px;
+  }
+
+  .filter select {
+    width: 95%;
+    height: 20px;
+    margin-left: 5px;
+    outline: none;
+    color: green;
+    border: hidden;
+    background-color: transparent;
+    border-bottom: 1px solid green;
+    font-family: "Cocogoose";
+    font-size: 12px;
+  }
+  .filter option:not(:first-of-type) {
+    color: green;
+  }
+  .filter input {
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 95%;
+    border: hidden;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid green;
+    font-family: "Cocogoose";
+    font-size: 12px;
+  }
+  ::placeholder {
+    color: green;
+  }
+
+  .flex-layout {
+    background-color: red;
     height: 100%;
+    width: 100%;
     display: grid;
-    gap: 10px;
-    grid-template-columns: 140px 140px;
-    grid-template-rows: 150px 150px;
-    margin-top: -50px;
-    margin-left: -10px;
+    grid-template-columns: 165px;
+    grid-template-rows: 200px;
     overflow-y: scroll;
-    justify-content: center;
+  }
+  .children {
   }
 }
 @media (min-width: 374px) {
   .select_ciudad {
-    width: 33%;
-    margin-right: 28%;
+    width: 30%;
+    margin-right: 33%;
   }
 
   .grid-layout {
-    grid-template-columns: 145px 145px;
+    grid-template-columns: 165px 165px;
     grid-template-rows: 150px 150px;
     margin-right: -10px;
-    margin-top: -70px;
+    margin-top: -85px;
   }
 }
 @media (min-width: 399px) {
@@ -273,7 +279,7 @@
 
 @media (min-width: 424px) {
   .select_ciudad {
-    width: 33%;
+    width: 30%;
     margin-right: 31%;
     margin-left: -2%;
   }
@@ -285,9 +291,12 @@
     margin-right: 50%;
     margin-left: -2%;
   }
-  .grid-layout {
-    grid-template-columns: 165px 165px 165px;
-    grid-template-rows: 150px 150px 150px;
+  .middle-menu {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("../images/SALUD-FAMILIAR.png");
   }
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
@@ -304,9 +313,6 @@
   }
   .middle-menu {
     height: 100vh;
-  }
-  * {
-    overflow: hidden;
   }
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
@@ -328,42 +334,25 @@
   /* hi-res laptops and desktops */
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 100%;
-  border-radius: 30px;
-  background: rgba(5, 79, 154, 255);
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card img {
-  margin-top: 5px;
-  text-align: center;
-  width: 80px;
-  height: 80px;
-  margin-left: 30px;
-}
-
-.container_card {
-  padding: 2px 16px;
-}
-
-.card-title {
-  display: block;
-  text-align: center;
+.btn-especialista {
+  width: 70%;
+  height: 40px;
+  border-radius: 20px;
+  align-self: center;
   color: white;
-  font-size: 10px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid white;
-  margin-top: 5px;
+  border: transparent;
+  margin-top: 20%;
+  background-color: rgba(68, 209, 100, 255);
+  font-size: 19px;
+  font-family: "Cocogoose";
 }
-.card-subtitle {
-  font-size: 8px;
-  text-align: center;
-  margin-top: 2px;
-  color: white;
+
+.menu_content {
+  color: rgb(100, 121, 105);
+  font-family: "Cocogoose";
+}
+.menu_content__2 {
+  color: rgb(100, 121, 105);
+  font-family: "Cocogoose";
+  font-size: 18px;
 }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/medicServicesStyles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <title>Buscar medico</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navBar">
+          <div class="nav_container">
+            <img src="icons/ubication-icon.png" alt="logo" class="logo" />
+            <select class="select_ciudad" name="ciudad" id="ciudad">
+              <option hidden selected>ciudad</option>
+              <option value="item 1">Barranquilla</option>
+              <option value="item 2">Santa Marta</option>
+              <option value="item 3">Medellin</option>
+              <option value="item 1">Bogota</option>
+              <option value="item 1">Barrancabermeja</option>
+            </select>
+            <input type="checkbox" id="check" />
+            <label for=""
+              ><span class="material-icons-outlined bell">
+                notifications
+              </span></label
+            >
+            <label for="check" class="bar-btn"
+              ><span class="material-icons settings"> settings </span>
+            </label>
+            <ul class="nav-menu">
+              <li>
+                <img
+                  src="icons/ubication-icon.png"
+                  class="menu_logo"
+                  alt=""
+                /><a href="#">Mi Perfil</a>
+              </li>
+              <li>
+                <img
+                  src="icons/ubication-icon.png"
+                  class="menu_logo"
+                  alt=""
+                /><a href="#">Mis beneficios</a>
+              </li>
+              <li>
+                <img
+                  src="icons/ubication-icon.png"
+                  class="menu_logo"
+                  alt=""
+                /><a href="#">Soporte</a>
+              </li>
+              <li>
+                <img
+                  src="icons/ubication-icon.png"
+                  class="menu_logo"
+                  alt=""
+                /><a href="#">Contáctenos</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="middle-menu">
+        <div class="service">
+          <div class="service_logo">
+            <img src="icons/Captura_preview_rev_1.png" alt="" />
+          </div>
+          <div class="service_title">
+            <p><strong>Servicios medicos</strong></p>
+            <h6>Citas virtuales</h6>
+          </div>
+        </div>
+        <div class="filter">
+          <select name="ciudad" id="ciudad">
+            <option hidden selected>Seleccione especialidad</option>
+            <option value="item 1">Barranquilla</option>
+            <option value="item 2">Santa Marta</option>
+            <option value="item 3">Medellin</option>
+            <option value="item 1">Bogota</option>
+            <option value="item 1">Barrancabermeja</option>
+          </select>
+
+          <input
+            type="text"
+            placeholder=" Filtrar por especialista o especialidad"
+          />
+        </div>
+
+        <div class="flex-layout">
+          <div class="children">1</div>
+          <div class="children">2</div>
+          <div class="children">3</div>
+          <div class="children">4</div>
+          <div class="children">5</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
