@@ -1,16 +1,14 @@
-*,
-*::after,
-*::before {
+* {
   box-sizing: border-box;
-  font-family: "Lato";
-  font-size: 14px;
-  font-weight: 700;
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  overflow: hidden;
 }
 /* google fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,100;1,300;1,700&display=swap");
+@font-face {
+  font-family: "Cocogoose";
+  src: url(../fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
+}
 
 @media (min-width: 320px) {
   /* smartphones, iPhone, portrait 480x320 phones */
@@ -56,7 +54,7 @@
     margin-right: 18%;
     outline: none;
     color: white;
-    border: 1px solid transparent;
+    border: hidden;
     background-color: transparent;
     border-bottom: 1px solid white;
   }
@@ -146,15 +144,16 @@
     height: 100vh;
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.6),
-        rgba(255, 255, 255, 0.8)
+        rgba(255, 255, 255, 0.5)
       ),
-      url("../images/family-background.png");
+      url("../images/background-2.png");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     display: flex;
     flex-flow: column;
   }
   .menu_title {
+    font-family: "Cocogoose";
     font-size: 25px;
     color: rgba(41, 87, 49, 255);
   }
@@ -205,7 +204,7 @@
 
 @media (min-width: 424px) {
   .select_ciudad {
-    width: 33%;
+    width: 30%;
     margin-right: 31%;
     margin-left: -2%;
   }
@@ -217,9 +216,12 @@
     margin-right: 50%;
     margin-left: -2%;
   }
-  .grid-layout {
-    grid-template-columns: 165px 165px 165px;
-    grid-template-rows: 150px 150px 150px;
+  .middle-menu {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("../images/SALUD-FAMILIAR.png");
   }
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
@@ -266,9 +268,16 @@
   border: transparent;
   margin-top: 20%;
   background-color: rgba(68, 209, 100, 255);
-  font-size: 17px;
+  font-size: 19px;
+  font-family: "Cocogoose";
 }
 
+.menu_content {
+  color: rgb(100, 121, 105);
+  font-family: "Cocogoose";
+}
 .menu_content__2 {
   color: rgb(100, 121, 105);
+  font-family: "Cocogoose";
+  font-size: 18px;
 }

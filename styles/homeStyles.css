@@ -1,16 +1,16 @@
+@font-face {
+  font-family: "Cocogoose";
+  src: url(../fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
+}
 *,
 *::after,
 *::before {
   box-sizing: border-box;
-  font-family: "Lato";
-  font-size: 14px;
-  font-weight: 700;
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: "Cocogoose";
 }
-/* google fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,100;1,300;1,700&display=swap");
 
 @media (min-width: 320px) {
   /* smartphones, iPhone, portrait 480x320 phones */
@@ -35,6 +35,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    overflow: hidden;
   }
 
   .nav_container {
@@ -53,7 +54,7 @@
   .select_ciudad {
     width: 38%;
     margin-left: -4%;
-    margin-right: 18%;
+    margin-right: 15%;
     outline: none;
     color: white;
     border: 1px solid transparent;
@@ -143,12 +144,12 @@
   .middle-menu {
     padding: 20px;
     width: 100vw;
-    height: 82vh;
+    height: 80vh;
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.6),
         rgba(255, 255, 255, 0.8)
       ),
-      url("../images/family-background.png");
+      url("../images/background-2.PNG");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -171,25 +172,38 @@
   .bottom-menu {
     background-color: rgba(255, 255, 255, 0.6);
     width: 100vw;
-    height: 5vh;
+    height: 6vh;
     display: flex;
     justify-content: space-around;
   }
   .menu-btn_1 {
-    background-color: blue;
+    background-color: white;
     width: 20%;
+  }
+  .menu-btn_1 img {
+    margin-top: -2px;
   }
   .menu-btn_2 {
-    background-color: green;
+    background-color: white;
     width: 20%;
+  }
+  .menu-btn_2 img {
+    margin-top: -1px;
   }
   .menu-btn_3 {
-    background-color: yellow;
+    background-color: white;
     width: 20%;
   }
+  .menu-btn_3 img {
+    margin-top: 1px;
+  }
+
   .menu-btn_4 {
-    background-color: purple;
+    background-color: white;
     width: 20%;
+  }
+  .menu-btn_4 img {
+    margin-top: 1px;
   }
   .menu-btn {
     text-align: center;
@@ -287,6 +301,9 @@
   .middle-menu {
     height: 100vh;
   }
+  * {
+    overflow: hidden;
+  }
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 @media (min-width: 1025px) {
@@ -333,11 +350,12 @@ img {
   display: block;
   text-align: center;
   color: white;
+  font-size: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid white;
 }
 .card-subtitle {
-  font-size: 10px;
+  font-size: 8px;
   text-align: center;
   margin-top: 5px;
   color: white;

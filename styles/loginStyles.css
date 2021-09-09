@@ -16,10 +16,10 @@
   height: 100vh;
   overflow: hidden;
   background-image: linear-gradient(
-      rgba(126, 213, 111, 0.8),
+      rgba(126, 213, 111),
       rgba(40, 180, 131, 0.8)
     ),
-    url("../images/family-background.png");
+    url("../images/background-2.png");
   background-size: cover;
   background-position: bottom;
 }
@@ -122,6 +122,16 @@ a {
   }
   .register {
     margin-top: 10vh;
+  }
+
+  .container {
+    background-image: linear-gradient(
+        rgba(126, 213, 111, 0.8),
+        rgba(40, 180, 131, 0.8)
+      ),
+      url("../images/family-background.png");
+    background-size: cover;
+    background-position: bottom;
   }
 }
 
