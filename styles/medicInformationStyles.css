@@ -2,30 +2,26 @@
   font-family: "Cocogoose";
   src: url(../fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
 }
-
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  font-family: "Cocogoose";
 }
 
 @media (min-width: 320px) {
   /* smartphones, iPhone, portrait 480x320 phones */
 
   /* contenedor principal */
-  .contact_container {
+  .container_mi {
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.6),
-        rgba(255, 255, 255, 0.8)
-      ),
-      url("../images/background-2.PNG");
-    background-size: cover;
-    background-position: center;
   }
 
   /* barra de navegacion principal */
@@ -148,12 +144,12 @@
   .middle-menu {
     padding: 20px;
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.6),
         rgba(255, 255, 255, 0.8)
       ),
-      url("../images/background-2.PNG");
+      url("../images/background-3.PNG");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -161,111 +157,142 @@
     gap: 10%;
   }
 
-  .contact-title {
-    font-family: "Cocogoose";
-    margin-top: -45px;
-    margin-left: 30px;
+  /* menu de el fondo */
+
+  .menu_logo {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    margin-left: -10px;
   }
 
-  .container-contact {
-    width: 91%;
-    height: 66%;
-    /* margin-top: -70px; */
-  }
-  .contact {
+  .children {
+    background-color: transparent;
+    padding: 10px;
     width: 90%;
-    height: 105%;
-    margin-left: 30px;
-    margin-top: -50px;
-    padding-top: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: nowrap;
+    gap: 5px;
+    justify-content: center;
+  }
+  .medic-photo {
+    height: 90px;
+    width: 140px;
+    background: #ccc;
+    overflow: hidden;
+    border-radius: 100px;
+  }
+  .medic-photo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .medic-information {
+    height: 80px;
+    width: 220px;
+    margin-top: 15px;
+  }
+
+  .medic-information__text p {
+    font-family: "Cocogoose";
+    font-size: 12px;
+    color: #054d99;
+  }
+
+  .medic-information__text img {
+    width: 20px;
+    height: 20px;
+    margin-left: -1px;
+  }
+  .medic-information__space {
+    margin-bottom: 5px;
+  }
+
+  .medic-price {
+    margin-top: 60px;
+  }
+
+  .specialization-information {
+    background-color: transparent;
+    border-radius: 20px;
+    margin-top: -30px;
+    height: 90vh;
+    width: 85vw;
     display: flex;
     flex-flow: column;
+    box-shadow: 2px 5px 10px 2px silver;
+  }
+  .specialization-information_1 {
+    border-bottom: 2px solid blue;
+    display: flex;
+    justify-content: center;
     gap: 20px;
-    box-shadow: 2px 5px 5px 5px silver;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
-    /* transform: rotateZ(270deg); */
-  }
-  .contact input.text {
-    outline: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 90%;
-    padding: 5px;
-    margin-left: 10px;
-    border-bottom: 1px solid darkgreen;
-    background-color: transparent;
-  }
-  .contact textarea {
-    width: 90%;
-    margin-left: 12px;
-    border-radius: 10px;
-    background: transparent;
-    border: 1px solid darkgreen;
-    padding: 5px;
-    outline: none;
-  }
-
-  .contact .submit {
-    align-self: center;
-    border: none;
-    width: 45%;
-    height: 30px;
-    background: darkgreen;
-    color: white;
-    border-radius: 10px;
-  }
-
-  .user-data-1 {
-    width: 50%;
-    height: 60%;
-    color: white;
-  }
-  .user-data-2 {
-    width: 40%;
-    height: 60%;
-  }
-  .user-data-2 p.user-id {
-    font-size: 14px;
-    padding-left: 70px;
-    margin-top: 112px;
-    font-family: "Mulish";
-    font-weight: 600;
-    color: gray;
-  }
-
-  .user-data-2 p.user-phone {
-    font-size: 14px;
-    padding-left: 70px;
-    margin-top: 48px;
-    font-family: "Mulish";
-    font-weight: 800;
-    color: gray;
-  }
-
-  .user-name {
-    margin-top: 55px;
+    margin-top: 10px;
     margin-left: 20px;
-    font-size: 15px;
-    font-family: "Mulish";
-    font-weight: 600;
+    padding-bottom: 10px;
+    width: 90%;
   }
 
-  .user-date {
+  .specialization-information_1 div {
+    width: 70%;
+    font-size: 9px;
+  }
+  .specialization-information_1 .information_title {
+    color: blue;
+  }
+
+  .specialization-information_1 img {
+    width: 65px;
+    height: 65px;
+    margin-left: 85px;
+    margin-bottom: 27px;
+  }
+
+  .specialization-information_2 {
+    border-bottom: 2px solid blue;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    margin-left: 20px;
+    width: 90%;
+  }
+  .specialization-container {
+    margin-bottom: 10px;
+  }
+
+  .specialization-information_2 .size {
+    font-size: 9px;
+  }
+  .specialization-information_2 .specialization-information_2__title {
+    margin-top: 10px;
+    color: blue;
+  }
+  .specialization-information_3-container {
+    margin-left: 20px;
+  }
+  .specialization-information_3__title {
+    color: blue;
+  }
+  .specialization-information_3 .size {
+    font-size: 9px;
+  }
+
+  .specialization-information_3 .btn-cita {
+    margin-left: 30%;
     margin-top: 30px;
-    margin-left: 20px;
+    width: 40%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
   }
 }
 @media (min-width: 374px) {
   .select_ciudad {
     width: 33%;
     margin-right: 28%;
-  }
-
-  .contact {
-    width: 90%;
-    margin-left: 35px;
   }
 }
 @media (min-width: 399px) {
@@ -297,29 +324,55 @@
 @media (min-width: 424px) {
   .select_ciudad {
     width: 33%;
-    margin-right: 31%;
+    margin-right: 29%;
     margin-left: -2%;
   }
-  .contact {
-    width: 90%;
-    height: 100%;
-    margin-left: 40px;
-    margin-top: -50px;
-  }
-  .settings {
-    margin-left: 0;
+  .specialization-information_1 img {
+    margin-bottom: 10px;
   }
 }
 
 @media (min-width: 550px) {
   .select_ciudad {
     width: 30%;
-    margin-right: 52%;
+    margin-right: 50%;
     margin-left: -2%;
   }
-  .contact {
-    width: 50%;
-    transform: rotateZ(0deg);
-  }
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  .logo {
+    margin-right: 1%;
+  }
+  .select_ciudad {
+    width: 20%;
+    margin-right: 64%;
+  }
+  .bottom-menu {
+    display: none;
+  }
+  .middle-menu {
+    height: 100vh;
+  }
+  * {
+    overflow: hidden;
+  }
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  .logo {
+    margin-right: 1%;
+  }
+  .select_ciudad {
+    width: 25%;
+    margin-right: 60%;
+  }
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1250px) {
+  .select_ciudad {
+    width: 15%;
+    margin-right: 73%;
+  }
+  /* hi-res laptops and desktops */
 }

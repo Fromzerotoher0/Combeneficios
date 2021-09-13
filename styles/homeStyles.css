@@ -16,7 +16,7 @@
   /* smartphones, iPhone, portrait 480x320 phones */
 
   /* contenedor principal */
-  .container {
+  .container_ph {
     height: 100vh;
     width: 100vw;
     display: flex;
