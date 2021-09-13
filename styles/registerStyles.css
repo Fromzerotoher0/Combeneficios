@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
 }
-.container {
+.container_pr {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
@@ -33,7 +33,7 @@
   margin-top: 5%;
 }
 
-.select {
+.select_registro {
   outline: none;
   color: white;
   border: 1px solid transparent;
@@ -90,8 +90,24 @@ a {
 /* media query*/
 
 @media screen and (min-width: 374px) {
+  .select_registro {
+    width: 75%;
+    margin: 5% 0 0 12%;
+  }
+  .text_input {
+    width: 75%;
+    margin: 5% 0 0 12%;
+  }
+  .date_input {
+    width: 75%;
+    margin: 5% 0 0 12%;
+  }
+  .btn {
+    width: 60%;
+    margin: 5% 0 5% 20%;
+  }
   a {
-    margin-left: 40%;
+    margin-left: 38%;
   }
 }
 
@@ -102,7 +118,7 @@ a {
 }
 
 @media screen and (min-width: 481px) {
-  .select {
+  .select_registro {
     width: 70%;
     margin: 5% 0 0 15%;
   }
@@ -132,7 +148,7 @@ a {
     margin: -5%;
   }
 
-  .select {
+  .select_registro {
     width: 50%;
     margin: 3% 0 0 25%;
   }
