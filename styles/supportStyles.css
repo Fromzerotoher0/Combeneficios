@@ -166,133 +166,81 @@
     margin-left: -10px;
   }
 
-  .children_m {
-    background-color: transparent;
-    padding: 10px;
-    width: 90%;
-    border-radius: 20px;
-    display: flex;
-    flex-flow: nowrap;
-    gap: 5px;
-    justify-content: center;
+  h2 {
+    color: green;
   }
-  .medic-photo {
-    height: 90px;
-    width: 140px;
-    background: #ccc;
-    overflow: hidden;
-    border-radius: 100px;
-  }
-  .medic-photo img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-  }
-  .medic-information {
-    height: 80px;
-    width: 220px;
-    margin-top: 15px;
-  }
-
-  .medic-information__text p {
-    font-family: "Cocogoose";
-    font-size: 12px;
-    color: #054d99;
-  }
-
-  .medic-information__text img {
-    width: 20px;
-    height: 20px;
-    margin-left: -1px;
-  }
-  .medic-information__space {
-    margin-bottom: 5px;
-  }
-
-  .medic-price {
-    margin-top: 60px;
-  }
-
-  .specialization-information {
-    background-color: transparent;
-    border-radius: 20px;
-    margin-top: -30px;
-    height: 90vh;
-    width: 85vw;
+  .support {
+    width: 90vw;
+    height: 50vh;
     display: flex;
     flex-flow: column;
-    box-shadow: 2px 5px 10px 2px silver;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: transparent;
   }
-  .specialization-information_1 {
-    border-bottom: 2px solid blue;
+
+  .support div {
+    background-color: white;
+    height: 42%;
+    border-radius: 30px;
+    padding: 4%;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
-    margin-left: 20px;
-    padding-bottom: 10px;
-    width: 90%;
+    font-size: 15px;
   }
 
-  .specialization-information_1 div {
-    width: 70%;
-    font-size: 9px;
-  }
-  .specialization-information_1 .information_title {
-    color: blue;
-  }
-
-  .specialization-information_1 img {
-    width: 65px;
-    height: 65px;
-    margin-left: 85px;
-    margin-bottom: 27px;
-  }
-
-  .specialization-information_2 {
-    border-bottom: 2px solid blue;
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    margin-left: 20px;
-    width: 90%;
-  }
-  .specialization-container {
-    margin-bottom: 10px;
-  }
-
-  .specialization-information_2 .size {
-    font-size: 9px;
-  }
-  .specialization-information_2 .specialization-information_2__title {
-    margin-top: 10px;
-    color: blue;
-  }
-  .specialization-information_3-container {
-    margin-left: 20px;
-  }
-  .specialization-information_3__title {
-    color: blue;
-  }
-  .specialization-information_3 .size {
-    font-size: 9px;
-  }
-
-  .specialization-information_3 .btn-cita {
-    margin-left: 30%;
-    margin-top: 30px;
-    width: 40%;
+  .btn-entrar {
+    margin-top: 50px;
     height: 30px;
-    border-radius: 10px;
+    outline: none;
     border: none;
-    background-color: blue;
+    border-radius: 10px;
+    margin-left: -55px;
+    width: 130px;
+    background-color: green;
     color: white;
+  }
+
+  .btn-entrar-2 {
+    margin-top: 50px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-left: -55px;
+    width: 130px;
+    background-color: green;
+    color: white;
+  }
+
+  .support-item {
+    box-shadow: 2px 5px 20px 5px silver;
+    color: green;
+  }
+
+  .logo-support-whatsapp img {
+    width: 70px;
+    height: 70px;
+    margin-top: -5px;
+  }
+
+  .logo-support-mail img {
+    width: 90px;
+    height: 75px;
+    margin-top: -5px;
+    margin-left: -10px;
+  }
+
+  .support-item p {
+    margin-left: -20px;
   }
 }
 @media (min-width: 374px) {
   .select_ciudad {
     width: 33%;
     margin-right: 28%;
+  }
+  .btn-entrar-2 {
+    margin-left: -27px;
   }
 }
 @media (min-width: 399px) {
@@ -317,7 +265,6 @@
     width: 50px;
     height: 50px;
   }
-
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 
@@ -327,8 +274,69 @@
     margin-right: 29%;
     margin-left: -2%;
   }
-  .specialization-information_1 img {
-    margin-bottom: 10px;
+  .support {
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: transparent;
+  }
+
+  .support div {
+    background-color: white;
+    height: 42%;
+    border-radius: 30px;
+    padding: 4%;
+    display: flex;
+    font-size: 15px;
+  }
+
+  .btn-entrar {
+    margin-top: 50px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-left: -12px;
+    width: 140px;
+    background-color: green;
+    color: white;
+  }
+
+  .btn-entrar-2 {
+    margin-top: 50px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-left: -12px;
+    width: 140px;
+    background-color: green;
+    color: white;
+  }
+
+  .support-item {
+    box-shadow: 2px 5px 20px 5px silver;
+    color: green;
+  }
+
+  .logo-support-whatsapp img {
+    width: 70px;
+    height: 70px;
+    margin-top: -5px;
+  }
+
+  .logo-support-mail img {
+    width: 90px;
+    height: 75px;
+    margin-top: -5px;
+    margin-left: -10px;
+  }
+
+  .support-item p {
+    margin-left: -20px;
   }
 }
 
@@ -340,6 +348,10 @@
   }
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
+
+@media (min-width: 767px) {
+}
+
 @media (min-width: 961px) {
   .logo {
     margin-right: 1%;

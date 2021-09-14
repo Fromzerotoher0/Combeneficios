@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/medicInformationStyles.css" />
+    <link rel="stylesheet" href="styles/profileStyles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
@@ -69,76 +69,24 @@
         </nav>
       </header>
       <div class="middle-menu">
+        <h2>Mi Perfil</h2>
         <div class="general-information">
-          <div class="children_m">
-            <div class="medic-photo">
+          <div class="children_p">
+            <div class="profile-photo">
               <img src="images/foto-perfil.jpg" alt="foto medico" />
             </div>
-            <div class="medic-information">
-              <div class="medic-information__text">
-                <p><strong>CARLOS PEREZ</strong></p>
-                <p class="medic-information__space">Ginecologo</p>
-                <p>
-                  <img src="icons/Polígono 2.png" alt="" /><img
-                    src="icons/Polígono 2.png"
-                    alt=""
-                  /><img src="icons/Polígono 2.png" alt="" /><img
-                    src="icons/Polígono 2 copia 4.png"
-                    alt=""
-                  /><img src="icons/Polígono 2 copia 4.png" alt="" />
-                </p>
-              </div>
-            </div>
-            <p class="medic-price">$50000</p>
           </div>
         </div>
-        <div class="specialization-information">
-          <div class="specialization-information_1">
-            <div>
-              <h2 class="information_title">Informacion Basica</h2>
-              <br />
-              <p>
-                <strong>direccion</strong><br />calle 79 #67-51 calle 79 #67-51
-              </p>
-              <br />
-              <p><strong>modalidad de cita</strong><br /></p>
-              <p>Virtual/Presencial</p>
-            </div>
-            <div>
-              <img src="icons/location_logo.png" alt="logo ubicacion" />
-              <p></p>
-              <p><strong>consultas realizadas </strong>: 37</p>
-            </div>
-          </div>
-          <div class="specialization-information_2">
-            <div class="specialization-container">
-              <p class="specialization-information_2__title">
-                <strong>Estudios Realizados</strong>
-              </p>
-              <div class="size">
-                <p>
-                  <strong>Medicina General</strong>
-                </p>
-                <p>Universidad Simon Bolivar</p>
-                <p>Año 2020</p>
-              </div>
-            </div>
-          </div>
-          <div class="specialization-information_3">
-            <div class="specialization-information_3-container">
-              <p class="specialization-information_3__title">
-                <strong>Especializaciones Realizadas</strong>
-                <div class="size">
-                  <p>
-                    <strong>Ginecologia</strong>
-                  </p>
-                  <p>Universidad Simon Bolivar</p>
-                  <p>Año 2020</p>
-                </div>
-              </p>
-              <button class="btn-cita">Agendar Cita</button>
-            </div>
-          </div>
+        <div class="profile-data">
+          <label for="nombres">nombres</label><br />
+          <input type="text" id="nombres" /><br />
+          <label for="nombres">Apellidos</label><br />
+          <input type="text" id="apellidos" /><br />
+          <label for="correo">Correo Electronico</label><br />
+          <input type="text" id="correo" /><br />
+          <label for="telefono">Telefono</label><br />
+          <input type="text" id="telefono" />
+          <button class="btn-update">Guardar Cambios</button>
         </div>
       </div>
     </div>
