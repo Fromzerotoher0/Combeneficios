@@ -471,6 +471,10 @@
     width: 30%;
   }
 
+  .beneficiarios-container {
+    overflow: hidden;
+  }
+
   .beneficiario-info {
     width: 95%;
     height: 20vh;

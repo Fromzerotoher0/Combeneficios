@@ -2,9 +2,7 @@
   font-family: "Cocogoose";
   src: url(../fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
 }
-*,
-*::after,
-*::before {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -177,8 +175,8 @@
     justify-content: center;
   }
   .profile-photo {
-    height: 100px;
-    width: 110px;
+    height: 150px;
+    width: 15s0px;
     background: #ccc;
     overflow: hidden;
     border-radius: 100px;
@@ -186,8 +184,8 @@
     margin-left: 20px;
   }
   .profile-photo img {
-    width: 140px;
-    height: 100px;
+    width: 150px;
+    height: 160px;
     object-fit: cover;
   }
 
@@ -239,6 +237,16 @@
   .btn-update {
     margin-top: 20%;
   }
+  .profile-photo {
+    margin-left: 50px;
+    width: 130px;
+    height: 140px;
+  }
+  .profile-photo img {
+    width: 130px;
+    height: 140px;
+    object-fit: cover;
+  }
 }
 @media (min-width: 399px) {
   .nav_container {
@@ -284,6 +292,16 @@
     color: white;
     background-color: green;
   }
+  .profile-photo {
+    margin-left: 50px;
+    width: 150px;
+    height: 160px;
+  }
+  .profile-photo img {
+    width: 150px;
+    height: 160px;
+    object-fit: cover;
+  }
 }
 
 @media (min-width: 550px) {
@@ -292,6 +310,7 @@
     margin-right: 50%;
     margin-left: -2%;
   }
+
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
 
@@ -304,6 +323,16 @@
   }
   .profile-data input {
     width: 95%;
+  }
+  .profile-photo {
+    margin-left: 130px;
+    width: 160px;
+    height: 170px;
+  }
+  .profile-photo img {
+    width: 160px;
+    height: 170px;
+    object-fit: cover;
   }
 }
 
@@ -324,6 +353,28 @@
   * {
     overflow: hidden;
   }
+  .profile-photo {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .profile-data {
+    height: 40%;
+    margin-top: -90px;
+  }
+  .general-information {
+    margin-top: -75px;
+  }
+  .profile-photo {
+    margin-left: 150px;
+    width: 190px;
+    height: 200px;
+  }
+  .profile-photo img {
+    width: 190px;
+    height: 200px;
+    object-fit: cover;
+  }
+
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 @media (min-width: 1025px) {
@@ -334,6 +385,16 @@
     width: 25%;
     margin-right: 60%;
   }
+
+  .general-information {
+    margin-top: -60px;
+  }
+
+  .profile-data {
+    width: 90%;
+    height: 42%;
+  }
+
   /* big landscape tablets, laptops, and desktops */
 }
 @media (min-width: 1250px) {
@@ -341,5 +402,34 @@
     width: 15%;
     margin-right: 73%;
   }
+  .general-information {
+    margin-top: -75px;
+  }
+
+  .general-information {
+    margin-top: -60px;
+  }
+
+  .profile-data {
+    width: 40%;
+    height: 42%;
+    margin-left: 30%;
+  }
+
+  .profile-photo {
+    margin-left: 150px;
+    width: 190px;
+    height: 200px;
+  }
+  .profile-photo img {
+    width: 190px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .middle-menu {
+    background-image: none;
+  }
+
   /* hi-res laptops and desktops */
 }
