@@ -77,37 +77,38 @@ option:not(:first-of-type) {
   border-radius: 20px;
   transform: translateY(-0.1rem);
   cursor: pointer;
-  margin: 15% 0 10% 15%;
+  margin: 7% 0 5% 15%;
   color: white;
   border: solid 1px white;
   background-color: transparent;
 }
 a {
   color: white;
-  margin-left: 38%;
+  margin-left: 37%;
 }
 
 /* media query*/
 
 @media screen and (min-width: 374px) {
   .select_registro {
-    width: 75%;
-    margin: 5% 0 0 12%;
+    width: 85%;
+    margin: 5% 0 0 8%;
   }
   .text_input {
-    width: 75%;
-    margin: 5% 0 0 12%;
+    width: 85%;
+    margin: 5% 0 0 8%;
+    padding: 2px;
   }
   .date_input {
-    width: 75%;
-    margin: 5% 0 0 12%;
+    width: 85%;
+    margin: 5% 0 0 8%;
   }
   .btn {
     width: 60%;
-    margin: 5% 0 5% 20%;
+    margin: 10% 0 5% 20%;
   }
   a {
-    margin-left: 38%;
+    margin-left: 40%;
   }
 }
 
@@ -174,12 +175,50 @@ a {
   }
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
-@media (min-width: 1025px) {
+@media (min-width: 1023px) {
+  .select_registro {
+    width: 50%;
+    margin: 4% 0 0 25%;
+  }
+  .text_input {
+    width: 50%;
+    margin: 4% 0 0 25%;
+  }
+  .date_input {
+    width: 50%;
+    margin: 4% 0 0 25%;
+  }
+  .btn {
+    width: 40%;
+    margin: 4% 0 5% 30%;
+  }
+
   a {
     margin-left: 45.5%;
   }
   /* big landscape tablets, laptops, and desktops */
 }
 @media (min-width: 1281px) {
+  .select_registro {
+    width: 70%;
+    height: 10%;
+    margin: 4% 0 0 13%;
+  }
+  .text_input {
+    width: 70%;
+    margin: 4% 0 0 13%;
+  }
+  .date_input {
+    width: 70%;
+    margin: 4% 0 0 13%;
+  }
+  .btn {
+    width: 40%;
+    margin: 4% 0 5% 30%;
+  }
+
+  a {
+    margin-left: 45.5%;
+  }
   /* hi-res laptops and desktops */
 }
