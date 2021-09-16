@@ -317,9 +317,42 @@
     margin-right: 52%;
     margin-left: -2%;
   }
+
   .contact {
-    width: 50%;
-    transform: rotateZ(0deg);
+    width: 70%;
+    height: 90%;
+    margin-left: 20vw;
+    padding-left: 10px;
   }
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+  .submit {
+    margin-top: -5px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact-title {
+    margin-left: 30vw;
+    font-size: 36px;
+  }
+
+  .contact {
+    width: 40%;
+    height: 60%;
+    margin-left: 30vw;
+    padding-left: 20px;
+  }
+  .contact textarea {
+    width: 95%;
+  }
+  .contact input.text {
+    width: 95%;
+  }
+
+  .contact .submit {
+    margin-top: -5px;
+    margin-left: 10px;
+    height: 10%;
+    width: 35%;
+  }
 }

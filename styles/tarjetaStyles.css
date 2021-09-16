@@ -132,6 +132,7 @@
   #check:checked ~ .nav-menu {
     height: 100vh;
     margin-top: -20px;
+    z-index: 9999;
   }
   #check:checked ~ .nav-menu li {
     display: block;
@@ -168,7 +169,7 @@
     background-image: url(../images/background-targeta.png);
     background-repeat: no-repeat;
     width: 115%;
-    height: 55%;
+    height: 49%;
     display: flex;
     flex-flow: row;
     border-radius: 10px;
@@ -260,7 +261,7 @@
   }
   .combeneficios_card {
     width: 88%;
-    height: 56%;
+    height: 50%;
     margin-left: 40px;
     margin-top: -50px;
     transform: rotateZ(0deg);
@@ -270,7 +271,20 @@
   }
 }
 
-@media (min-width: 550px) {
+@media (min-width: 540px) {
+  .select_ciudad {
+    width: 30%;
+    margin-right: 40%;
+    margin-left: -2%;
+  }
+  .combeneficios_card {
+    width: 70%;
+    transform: rotateZ(0deg);
+  }
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width: 767px) {
   .select_ciudad {
     width: 30%;
     margin-right: 52%;
@@ -281,4 +295,49 @@
     transform: rotateZ(0deg);
   }
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width: 900px) {
+  .combeneficios_card {
+    width: 38%;
+  }
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width: 1000px) {
+  .combeneficios_card {
+    width: 37%;
+    height: 50%;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .combeneficios_card {
+    width: 37%;
+    height: 50%;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 1439px) {
+  .combeneficios_card {
+    width: 27%;
+    height: 36%;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .combeneficios_card {
+    width: 16.5%;
+    height: 30%;
+  }
+  .card-title {
+    margin-top: -170px;
+    font-size: 30px;
+  }
+  .container-card {
+    margin-left: -170px;
+  }
 }
