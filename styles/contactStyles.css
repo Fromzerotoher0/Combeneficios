@@ -169,7 +169,7 @@
 
   .container-contact {
     width: 91%;
-    height: 66%;
+    height: 60%;
     /* margin-top: -70px; */
   }
   .contact {
@@ -314,19 +314,81 @@
 @media (min-width: 550px) {
   .select_ciudad {
     width: 30%;
-    margin-right: 52%;
+    margin-right: 50%;
     margin-left: -2%;
   }
 
   .contact {
     width: 70%;
-    height: 90%;
+    height: 100%;
     margin-left: 20vw;
     padding-left: 10px;
   }
 
   .submit {
     margin-top: -5px;
+  }
+}
+
+@media (min-width: 767px) {
+  .select_ciudad {
+    width: 30%;
+    margin-right: 52%;
+    margin-left: -2%;
+  }
+
+  .contact {
+    width: 70%;
+    height: 100%;
+    margin-left: 20vw;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 961px) {
+  .select_ciudad {
+    width: 30%;
+    margin-right: 52%;
+    margin-left: -2%;
+  }
+
+  .contact {
+    width: 70%;
+    height: 100%;
+    margin-left: 20vw;
+    padding-left: 10px;
+  }
+  .contact .submit {
+    margin-top: -5px;
+    margin-left: 10px;
+    height: 10%;
+    width: 30%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .contact-title {
+    margin-left: 30vw;
+    font-size: 36px;
+  }
+
+  .contact {
+    width: 45%;
+    height: 100%;
+    margin-left: 30vw;
+  }
+  .contact textarea {
+    width: 93%;
+  }
+  .contact input.text {
+    width: 93%;
+  }
+
+  .contact .submit {
+    margin-top: -5px;
+    margin-left: 10px;
+    height: 10%;
+    width: 35%;
   }
 }
 
@@ -338,15 +400,14 @@
 
   .contact {
     width: 40%;
-    height: 60%;
+    height: 90%;
     margin-left: 30vw;
-    padding-left: 20px;
   }
   .contact textarea {
-    width: 95%;
+    width: 93%;
   }
   .contact input.text {
-    width: 95%;
+    width: 93%;
   }
 
   .contact .submit {

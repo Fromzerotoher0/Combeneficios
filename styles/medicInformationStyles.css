@@ -169,7 +169,7 @@
   .children_m {
     background-color: transparent;
     padding: 10px;
-    width: 90%;
+    width: 100%;
     border-radius: 20px;
     display: flex;
     flex-flow: nowrap;
@@ -178,8 +178,9 @@
   }
   .medic-photo {
     height: 90px;
-    width: 140px;
+    width: 181px;
     background: #ccc;
+    margin-left: -20px;
     overflow: hidden;
     border-radius: 100px;
   }
@@ -249,6 +250,18 @@
     margin-bottom: 27px;
   }
 
+  .information_data {
+    margin-left: 14px;
+  }
+
+  .information_data img {
+    width: 74px;
+    margin-left: 70px;
+  }
+  .consultas {
+    margin-top: 12px;
+  }
+
   .specialization-information_2 {
     border-bottom: 2px solid blue;
     display: flex;
@@ -294,6 +307,23 @@
     width: 33%;
     margin-right: 28%;
   }
+  .medic-photo {
+    height: 140px;
+    width: px;
+    background: #ccc;
+    margin-left: 1px;
+    overflow: hidden;
+    border-radius: 100px;
+  }
+  .medic-photo img {
+    width: 140px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .information_data {
+    margin-left: 0px;
+  }
 }
 @media (min-width: 399px) {
   .nav_container {
@@ -330,6 +360,19 @@
   .specialization-information_1 img {
     margin-bottom: 10px;
   }
+  .medic-photo {
+    height: 120px;
+    width: 130px;
+    background: #ccc;
+    margin-left: -20px;
+    overflow: hidden;
+    border-radius: 100px;
+  }
+  .medic-photo img {
+    width: 120px;
+    height: 130px;
+    object-fit: cover;
+  }
 }
 
 @media (min-width: 550px) {
@@ -340,6 +383,38 @@
   }
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
+@media (min-width: 740px) {
+  .specialization-information_1 img {
+    margin-left: 220px;
+  }
+}
+
+@media (min-width: 767px) {
+  .specialization-information {
+    margin-left: 55px;
+  }
+  .specialization-information_1 img {
+    margin-left: 220px;
+  }
+  .consultas {
+    margin-left: 145px;
+  }
+
+  .medic-photo {
+    height: 130px;
+    width: 140px;
+  }
+  .medic-photo img {
+    height: 130px;
+    width: 140px;
+  }
+
+  .specialization-information_3 .btn-cita {
+    width: 25%;
+  }
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
 @media (min-width: 961px) {
   .logo {
     margin-right: 1%;
@@ -357,6 +432,43 @@
   * {
     overflow: hidden;
   }
+  .specialization-information {
+    height: 50vh;
+    width: 82vw;
+    margin-left: 60px;
+    margin-top: -40px;
+  }
+  .specialization-information_1 img {
+    margin-left: 31vw;
+  }
+  .consultas {
+    margin-left: 23vw;
+  }
+
+  .medic-photo {
+    height: 130px;
+    width: 140px;
+  }
+  .medic-photo img {
+    height: 130px;
+    width: 140px;
+  }
+  .specialization-information_1 {
+    padding-left: 10px;
+    margin-left: 20px;
+    width: 78vw;
+  }
+  .specialization-information_2 {
+    padding-left: 10px;
+    width: 78vw;
+  }
+  .specialization-information_3 {
+    padding-left: 10px;
+  }
+  .specialization-information_3 .btn-cita {
+    width: 25%;
+    margin-left: 35%;
+  }
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 @media (min-width: 1025px) {
@@ -373,6 +485,59 @@
   .select_ciudad {
     width: 15%;
     margin-right: 73%;
+  }
+  .specialization-information {
+    height: 50vh;
+    width: 34vw;
+    margin-left: 34%;
+  }
+
+  .specialization-information_1 img {
+    margin-left: 31vw;
+  }
+  .consultas {
+    margin-left: 3.5vw;
+    margin-top: -12px;
+  }
+
+  .medic-photo {
+    height: 130px;
+    width: 140px;
+  }
+  .medic-photo img {
+    height: 130px;
+    width: 140px;
+  }
+  .specialization-information_1 {
+    padding-left: 10px;
+    margin-left: 20px;
+    width: 31vw;
+  }
+
+  .specialization-information_1 div {
+    width: 70%;
+    font-size: 9px;
+    height: 88px;
+  }
+
+  .specialization-information_1 img {
+    margin-left: 55%;
+  }
+
+  .specialization-information_2 {
+    padding-left: 10px;
+    width: 31vw;
+  }
+  .specialization-information_3 {
+    padding-left: 10px;
+  }
+  .specialization-information_3__title {
+    margin-top: 5px;
+  }
+
+  .specialization-information_3 .btn-cita {
+    width: 35%;
+    margin-left: 30%;
   }
   /* hi-res laptops and desktops */
 }

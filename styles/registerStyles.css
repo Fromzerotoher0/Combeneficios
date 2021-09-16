@@ -13,7 +13,8 @@
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
   background-image: linear-gradient(
       rgba(126, 213, 111, 0.8),
       rgba(40, 180, 131, 0.8)
@@ -177,48 +178,54 @@ a {
 }
 @media (min-width: 1023px) {
   .select_registro {
-    width: 50%;
+    width: 40%;
     margin: 4% 0 0 25%;
   }
   .text_input {
-    width: 50%;
+    width: 40%;
     margin: 4% 0 0 25%;
   }
   .date_input {
-    width: 50%;
+    width: 40%;
     margin: 4% 0 0 25%;
   }
   .btn {
-    width: 40%;
-    margin: 4% 0 5% 30%;
+    width: 20%;
+    margin: 4% 0 5% 35%;
   }
-
+  form {
+    margin-left: 7%;
+  }
   a {
-    margin-left: 45.5%;
+    margin-left: 39%;
   }
   /* big landscape tablets, laptops, and desktops */
 }
 @media (min-width: 1281px) {
   .select_registro {
-    width: 70%;
+    width: 50%;
     height: 10%;
     margin: 4% 0 0 13%;
   }
   .text_input {
-    width: 70%;
+    width: 50%;
     margin: 4% 0 0 13%;
   }
   .date_input {
-    width: 70%;
+    width: 50%;
     margin: 4% 0 0 13%;
   }
   .btn {
-    width: 40%;
-    margin: 4% 0 5% 30%;
+    width: 30%;
+    margin: 4% 0 5% 23%;
   }
 
   a {
-    margin-left: 45.5%;
+    margin-left: 33%;
+  }
+
+  form {
+    margin-left: 20%;
   }
   /* hi-res laptops and desktops */
 }

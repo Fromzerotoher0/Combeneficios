@@ -118,11 +118,15 @@ a {
 
   .login_input {
     margin: 3% 0 3% 0;
+    width: 80%;
   }
   .register {
     margin-top: 10vh;
   }
 
+  .btn {
+    width: 45%;
+  }
   .container {
     background-image: linear-gradient(
         rgba(126, 213, 111, 0.8),
@@ -156,6 +160,7 @@ a {
     margin-top: 15vh;
   }
   .btn {
+    width: 30%;
     margin-top: 10%;
   }
 }
@@ -169,10 +174,11 @@ a {
     margin: 0;
   }
   .login_input {
-    width: 60%;
+    width: 50%;
     margin: 3% 0 3% 0;
   }
   .btn {
+    width: 30%;
     margin: 5% 0 5% 0;
   }
 

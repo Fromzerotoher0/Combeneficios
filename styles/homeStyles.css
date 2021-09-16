@@ -275,7 +275,7 @@
 
 @media (min-width: 424px) {
   .select_ciudad {
-    width: 33%;
+    width: 30%;
     margin-right: 31%;
     margin-left: -2%;
   }
@@ -288,7 +288,7 @@
     margin-left: -2%;
   }
   .grid-layout {
-    grid-template-columns: 165px 165px 165px;
+    grid-template-columns: 140px 140px 140px;
     grid-template-rows: 150px 150px 150px;
   }
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
@@ -325,7 +325,7 @@
 @media (min-width: 1250px) {
   .select_ciudad {
     width: 15%;
-    margin-right: 73%;
+    margin-right: 72.5%;
   }
   /* hi-res laptops and desktops */
 }

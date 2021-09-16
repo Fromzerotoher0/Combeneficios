@@ -442,7 +442,7 @@
   .btn-beneficiario {
     margin-top: 70px;
     width: 72vw;
-    margin-left: 70%;
+    margin-left: 80%;
   }
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
@@ -458,11 +458,11 @@
   .btn-beneficiario {
     margin-top: 70px;
     width: 80vw;
-    margin-left: 75%;
+    margin-left: 85%;
   }
   /* big landscape tablets, laptops, and desktops */
 }
-@media (min-width: 1250px) {
+@media (min-width: 1450px) {
   .select_ciudad {
     width: 15%;
     margin-right: 73%;
@@ -485,13 +485,15 @@
   .btn-beneficiario {
     margin-top: 70px;
     width: 10vw;
-    margin-left: 73vw;
+    margin-left: 68vw;
+    margin-bottom: 5px;
   }
   /* hi-res laptops and desktops */
 }
 
 @media (min-width: 1251px) {
   .add-beneficiario {
-    width: 20%;
+    width: 15%;
+    height: 7%;
   }
 }

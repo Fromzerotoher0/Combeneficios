@@ -162,6 +162,29 @@
     font-size: 15px;
     color: rgb(100, 121, 105);
   }
+
+  .btn-especialista {
+    width: 70%;
+    height: 40px;
+    border-radius: 20px;
+    align-self: center;
+    color: white;
+    border: transparent;
+    margin-top: 20%;
+    background-color: rgba(68, 209, 100, 255);
+    font-size: 19px;
+    font-family: "Cocogoose";
+  }
+
+  .menu_content {
+    color: rgb(100, 121, 105);
+    font-family: "Cocogoose";
+  }
+  .menu_content__2 {
+    color: rgb(100, 121, 105);
+    font-family: "Cocogoose";
+    font-size: 18px;
+  }
 }
 @media (min-width: 374px) {
   .select_ciudad {
@@ -174,6 +197,21 @@
     grid-template-rows: 150px 150px;
     margin-right: -10px;
     margin-top: -85px;
+  }
+
+  .btn-especialista {
+    width: 60%;
+    height: 40px;
+  }
+
+  .menu_content {
+    color: rgb(100, 121, 105);
+    font-family: "Cocogoose";
+  }
+  .menu_content__2 {
+    color: rgb(100, 121, 105);
+    font-family: "Cocogoose";
+    font-size: 18px;
   }
 }
 @media (min-width: 399px) {
@@ -223,6 +261,9 @@
       ),
       url("../images/SALUD-FAMILIAR.png");
   }
+  .btn-especialista {
+    width: 35%;
+  }
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
 @media (min-width: 961px) {
@@ -238,6 +279,9 @@
   }
   .middle-menu {
     height: 100vh;
+  }
+  .btn-especialista {
+    width: 30%;
   }
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
@@ -256,28 +300,27 @@
     width: 15%;
     margin-right: 73%;
   }
+  .btn-especialista {
+    width: 25%;
+    height: 40px;
+    border-radius: 20px;
+    align-self: center;
+    color: white;
+    border: transparent;
+    margin-top: 20%;
+    background-color: rgba(68, 209, 100, 255);
+    font-size: 19px;
+    font-family: "Cocogoose";
+  }
+
+  .menu_content {
+    color: rgb(100, 121, 105);
+    font-family: "Cocogoose";
+  }
+  .menu_content__2 {
+    color: rgb(100, 121, 105);
+    font-family: "Cocogoose";
+    font-size: 18px;
+  }
   /* hi-res laptops and desktops */
-}
-
-.btn-especialista {
-  width: 70%;
-  height: 40px;
-  border-radius: 20px;
-  align-self: center;
-  color: white;
-  border: transparent;
-  margin-top: 20%;
-  background-color: rgba(68, 209, 100, 255);
-  font-size: 19px;
-  font-family: "Cocogoose";
-}
-
-.menu_content {
-  color: rgb(100, 121, 105);
-  font-family: "Cocogoose";
-}
-.menu_content__2 {
-  color: rgb(100, 121, 105);
-  font-family: "Cocogoose";
-  font-size: 18px;
 }
