@@ -258,9 +258,6 @@
     width: 74px;
     margin-left: 70px;
   }
-  .consultas {
-    margin-top: 12px;
-  }
 
   .specialization-information_2 {
     border-bottom: 2px solid blue;
@@ -324,6 +321,14 @@
   .information_data {
     margin-left: 0px;
   }
+
+  .consultas {
+    margin-top: -20px;
+  }
+
+  .specialization-information {
+    height: 42vh;
+  }
 }
 @media (min-width: 399px) {
   .nav_container {
@@ -357,6 +362,11 @@
     margin-right: 29%;
     margin-left: -2%;
   }
+
+  .specialization-information {
+    height: 57%;
+  }
+
   .specialization-information_1 img {
     margin-bottom: 10px;
   }
@@ -487,13 +497,14 @@
     margin-right: 73%;
   }
   .specialization-information {
-    height: 50vh;
+    height: 45vh;
     width: 34vw;
     margin-left: 34%;
   }
 
   .specialization-information_1 img {
     margin-left: 31vw;
+    width: 70px;
   }
   .consultas {
     margin-left: 3.5vw;

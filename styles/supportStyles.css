@@ -181,7 +181,7 @@
 
   .support div {
     background-color: white;
-    height: 42%;
+    height: 35%;
     border-radius: 30px;
     padding: 4%;
     display: flex;
@@ -286,7 +286,7 @@
 
   .support div {
     background-color: white;
-    height: 42%;
+    height: 35%;
     border-radius: 30px;
     padding: 4%;
     display: flex;
@@ -350,6 +350,73 @@
 }
 
 @media (min-width: 767px) {
+  .support {
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: transparent;
+  }
+
+  .support div {
+    background-color: white;
+    height: 35%;
+    border-radius: 30px;
+    padding: 4%;
+    display: flex;
+    font-size: 15px;
+  }
+
+  .btn-entrar {
+    margin-top: 50px;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin-left: 188px;
+    width: 140px;
+    background-color: green;
+    color: white;
+  }
+
+  .btn-entrar-2 {
+    margin-top: 50px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-left: 188px;
+    width: 140px;
+    background-color: green;
+    color: white;
+  }
+
+  .support-item {
+    box-shadow: 2px 5px 20px 5px silver;
+    color: green;
+  }
+
+  .logo-support-whatsapp {
+    margin: 0;
+  }
+
+  .logo-support-whatsapp img {
+    width: 70px;
+    height: 70px;
+    margin-top: -5px;
+  }
+
+  .logo-support-mail img {
+    width: 90px;
+    height: 75px;
+    margin-top: -5px;
+    margin-left: -10px;
+  }
+
+  .support-item p {
+    margin-left: -20px;
+  }
 }
 
 @media (min-width: 961px) {
@@ -369,6 +436,66 @@
   * {
     overflow: hidden;
   }
+
+  .support {
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    background-color: transparent;
+    margin-left: 10%;
+  }
+
+  .support div {
+    background-color: white;
+    border-radius: 30px;
+    padding: 4%;
+    display: flex;
+    font-size: 15px;
+    height: 160px;
+  }
+
+  .btn-entrar {
+    margin-top: 50px;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin-left: 290px;
+    width: 150px;
+    background-color: green;
+    color: white;
+  }
+
+  .btn-entrar-2 {
+    margin-top: 50px;
+    height: 30px;
+    margin-left: 290px;
+    width: 150px;
+  }
+
+  .support-item {
+    box-shadow: 2px 5px 20px 5px silver;
+    color: green;
+  }
+
+  .logo-support-whatsapp img {
+    width: 70px;
+    height: 70px;
+    margin-top: -5px;
+  }
+
+  .logo-support-mail img {
+    width: 90px;
+    height: 75px;
+    margin-top: -5px;
+    margin-left: -10px;
+  }
+
+  .support-item p {
+    margin-left: -20px;
+  }
+
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 @media (min-width: 1025px) {
@@ -386,5 +513,65 @@
     width: 15%;
     margin-right: 73%;
   }
+
+  .support {
+    width: 60vw;
+    height: 50vh;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    background-color: transparent;
+    margin-left: 20%;
+  }
+
+  .support div {
+    background-color: white;
+    border-radius: 30px;
+    padding: 4%;
+    display: flex;
+    font-size: 15px;
+    height: 160px;
+  }
+
+  .btn-entrar {
+    margin-top: 30px;
+    height: 36px;
+    outline: none;
+    border: none;
+    margin-left: 19vw;
+    width: 199px;
+    background-color: green;
+    color: white;
+  }
+
+  .btn-entrar-2 {
+    margin-top: 30px;
+    height: 36px;
+    margin-left: 19vw;
+    width: 199px;
+  }
+
+  .support-item {
+    box-shadow: 2px 5px 20px 5px silver;
+    color: green;
+  }
+
+  .logo-support-whatsapp img {
+    width: 70px;
+    height: 70px;
+    margin-top: -20px;
+  }
+
+  .logo-support-mail img {
+    width: 90px;
+    height: 75px;
+    margin-left: -10px;
+    margin-top: -25px;
+  }
+
+  .support-item p {
+    margin-left: -20px;
+  }
+
   /* hi-res laptops and desktops */
 }
